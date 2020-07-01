@@ -1,6 +1,6 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
-# 添加拍照次数显示
+# 添加红外串口，添加按钮
 #注意到 单次拍照 需要 再写一个方法，因为多次拍照会将 输入路径改掉
 import numpy as np
 import cv2 as cv
@@ -19,7 +19,7 @@ from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 from matplotlib.figure import Figure
 from queue import Queue
 import widgets_29 as widgets# 包含 MyVideoCapture
-
+import serial.tools.list_ports
 class App:
 
 
@@ -43,7 +43,7 @@ class App:
         self.defect_src_list = [] # 存在缺陷的原图
         self.defect_dst_list = []# 存在缺陷的dst图
         self.defect_info_list=[]
-        self.COM = None
+        self.COM_plc = None
         #self.COM = serial.Serial('COM1',9600,bytesize=8,stopbits=1,parity='N',timeout=0.5)
         self.state_read_flag = Event()      # 设置平台读取状态开关
         self.state_read_flag.set() # 将读取开关设置为true
@@ -128,9 +128,9 @@ class App:
         for j in list_combo_entry:
             j.place(relx = initial_position_x,rely = initial_position_y + step )
             step += 0.05
-        self.button_font = font.Font(family='Symbol',size = int(self.win_height/60))# 设置按钮的字体和大小
+        self.button_font = font.Font(family='Symbol',size = int(self.win_height/50))# 设置按钮的字体和大小
 
-        but_open_com = tk.Button(self.tab_video,text = '串口通信', relief = GROOVE,font = self.button_font,fg = 'blue',bg = '#DCDCDC',command = self.open_COM)
+        but_open_com = tk.Button(self.tab_video,text = '串口通信', relief = GROOVE,font = self.button_font,fg = 'blue',bg = '#DCDCDC',command = self.open_COM_plc)
         but_open_com.place(relx = 0.525,rely = 0.04)
 
         but_start_motor_program = tk.Button(self.tab_video, text='打开红外', relief = GROOVE,font = self.button_font,fg = 'blue',bg = '#DCDCDC',
@@ -156,10 +156,28 @@ class App:
         but_click_move.place(relx=0.525, rely=0.2)
 
         self.click_move_pos = tk.IntVar()  # 点动距离
-        combobox_click_move_pos = ttk.Combobox(self.tab_video, width=8, height = 3 ,textvariable=self.click_move_pos)
+        combobox_click_move_pos = ttk.Combobox(self.tab_video, width=10, height = 10 ,textvariable=self.click_move_pos)
         combobox_click_move_pos['values'] = (0,500, 1000, 1500, 2000, 2400)
         combobox_click_move_pos.current(0)
         combobox_click_move_pos.place(relx=0.625, rely=0.2)
+
+        but_manual_forward = tk.Button(self.tab_video, text='手动前进', relief=GROOVE, font=self.button_font, fg='black',
+                                   bg='#DCDCDC',
+                                   command=self.manual_forward)
+        but_manual_forward.place(relx=0.725, rely=0.2)
+
+        but_manual_backward = tk.Button(self.tab_video, text='手动后退', relief=GROOVE, font=self.button_font, fg='black',
+                                   bg='#DCDCDC',
+                                   command=self.manual_backward)
+        but_manual_backward.place(relx=0.825, rely=0.2)
+
+        but_emergency_stop = tk.Button(self.tab_video, text='紧急停止', relief=GROOVE, font=self.button_font, fg='black',
+                                   bg='#DCDCDC',
+                                   command=self.emergency_stop)
+        but_emergency_stop.place(relx=0.825, rely=0.12)
+
+
+
         list_buttons = [but_open_com, but_start_motor_program, but_get_pic, but_platform_move, but_platform_reset,
                         but_click_move, combobox_click_move_pos]
 
@@ -169,6 +187,7 @@ class App:
         # 视频画布
         self.canvas = tk.Canvas(self.tab_video, width=self.canvas_width, height=self.canvas_height,bg = 'grey' )
         self.canvas.place(relx = 0.525 , rely = 0.325)
+
 
 #####################创建  第 2 页 的 按钮和标签####################################################
     def create_widgets_2(self):
@@ -309,8 +328,21 @@ class App:
         runT.setDaemon(True)
         runT.start()
 
-    def open_COM(self):
-        self.COM = serial.Serial('COM1', 9600, bytesize=8, stopbits=1, parity='N', timeout=0.5)
+    def open_COM_plc(self):
+        port_list = list(serial.tools.list_ports.comports())
+        print(port_list)
+        if len(port_list) != 0:
+            self.COM_plc = serial.Serial('COM1', 9600, bytesize=8, stopbits=1, parity='N', timeout=0.5)
+            print('PLC串口打开成功')
+        else:
+            print('无可用串口')
+
+    def open_COM_temp(self):
+        port_list = list(serial.tools.list_ports.comports())
+        print(port_list)
+        if len(port_list) != 0:
+            self.COM_temp = serial.Serial('COM2', 9600, bytesize=8, stopbits=1, parity='N', timeout=0.5)
+            print('温度传感器串口打开成功')
 
     def take_photo_new_thread(self):
         runT = Thread(target=self.take_photo_new)
@@ -338,7 +370,7 @@ class App:
         self.pic_sum += 1 # 记录总计拍照次数
         current_position = self.get_platform_position()
         current_state = self.get_platform_state()
-        if self.COM is not None:
+        if self.COM_plc is not None:
             if current_position > 160 and current_position < 2401: #and self.platform_state == '04':
                 print('第' + str(self.timer_times_count) + '次拍照')
                 ret,frame = self.vid.get_frame()
@@ -363,7 +395,7 @@ class App:
     # 自动拍照
     def auto_take_pic(self):
         self.timer_times_count += 1
-        if self.COM != None:
+        if self.COM_plc != None:
             self.slow_move()
             time.sleep(0.1)
             if self.platform_position == 0:
@@ -398,7 +430,7 @@ class App:
                 time.sleep(pic_delay)
                 old = new
     def get_pics_in_test_mode(self):
-        if self.COM is None:
+        if self.COM_plc is None:
             pic_delay = self.pic_delay.get() / 1000.0  # tk.IntVar 要加上 .get()
             folder_time = time.strftime("%d-%m-%Y-%H-%M-%S")
             folder_path = self.snapPathEntry.get()
@@ -451,17 +483,17 @@ class App:
     '''
     #发送状态请求
     def receive_state(self):  # 发送函数
-        if self.COM != None:
+        if self.COM_plc != None:
             while True:
                 self.state_read_flag.wait()
-                if self.COM.is_open:
+                if self.COM_plc.is_open:
                     myinput = bytes([0X01, 0X03, 0X00, 0X00, 0X00, 0X02, 0XC4, 0X0B])
                     # x.write("\X01\X03\X00\X00\X00\X02\XC4\X0B".encode('gbk'))
-                    self.COM.write(myinput)
+                    self.COM_plc.write(myinput)
                     time.sleep(0.05)
             #读取状态
-                while self.COM.inWaiting() > 0:
-                    myout = self.COM.read(9)   # 读取串口传过来的字节流，接收 9 个字节的数据
+                while self.COM_plc.inWaiting() > 0:
+                    myout = self.COM_plc.read(9)   # 读取串口传过来的字节流，接收 9 个字节的数据
                     datas = ''.join(map(lambda x: ('/x' if len(hex(x)) >= 4 else '/x0') + hex(x)[2:], myout))  # 将数据转成十六进制的形式
                     #print('datas:', datas)  #datas: /x01/x03/x04/x00/x00/x00/x76/x7b/xd5
                     new_datas = datas.split("/x")  # 将字符串分割，拼接下标4和5部分的数据
@@ -473,60 +505,52 @@ class App:
                 #print(self.platform_position)
           #print(self.platform_state,self.platform_position)
     def get_platform_position(self):
-        if self.COM != None:
+        if self.COM_plc != None:
             position = self.platform_position
         else:
             r = random.randint(1,9999)
             position = r
         return position
     def get_platform_state(self):
-        if self.COM != None:
+        if self.COM_plc != None:
             state = self.platform_state
         else:
             state = 'Test'
         return state
     #平台复位
     def reset(self):
-        if self.COM != None:
+        if self.COM_plc != None:
             #self.lock.acquire()
             self.state_read_flag.clear()
-            if self.COM.is_open:
+            if self.COM_plc.is_open:
                 myinput = bytes([0X01, 0X05, 0X00, 0X00, 0XFF, 0X00, 0X8C, 0X3A])
-                # 这是我要发送的命令，原本命令是：01 03 00 00 00 01 84 0A
-                # x.write("\X01\X03\X00\X00\X00\X02\XC4\X0B".encode('gbk'))
-                self.COM.write(myinput)
+                self.COM_plc.write(myinput)
                 time.sleep(0.1)
             self.state_read_flag.set()
-            # self.timer_times_count += 1  #用于测试timer
-            #self.lock.release()
         else:
             mBox.showinfo(title='串口未连接', message='串口未连接，无法复位')
 
     #平台缓慢移动
     def slow_move(self):
-        if self.COM != None:
+        if self.COM_plc != None:
             self.lock.acquire()
             #self.state_read_flag.clear()
-            if self.COM.is_open:
+            if self.COM_plc.is_open:
                 myinput = bytes([0X01, 0X05, 0X00, 0X01, 0XFF, 0X00, 0XDD, 0XFA])
-                self.COM.write(myinput)
+                self.COM_plc.write(myinput)
                 time.sleep(0.05)
             #self.state_read_flag.set()
             self.lock.release()
         else:
             mBox.showinfo(title='串口未连接', message='串口未连接，无法移动平台')
     def click_move(self): #点动
-        if self.COM != None:
+        if self.COM_plc != None:
             self.state_read_flag.clear()
             self.lock.acquire()
-
             pos_get = self.click_move_pos.get()
             print(pos_get)
-
             pos_high8 = int(pos_get / 256) + 128
             pos_low8 = int(pos_get) % 256
-            # print('位置 pos_high8',pos_high8,'tpye pos_high8',type(pos_high8))
-            # print('位置 pos_high8', pos_low8, 'tpye pos_low8', type(pos_low8))
             crch = 0xFF
             crcl = 0xFF
             for i in [0X01, 0X06, 0X00, 0X02, pos_high8, pos_low8]:
@@ -542,17 +566,65 @@ class App:
                         crch = crch // 2
             parity_high_8 = crcl
             parity_low_8 = crch
-            #print('校验和计算完成', 'parity_high_8 =', parity_high_8, '   type', type(parity_high_8))
-            #print('校验和计算完成', 'parity_low_8 =', parity_low_8, '   type', type(parity_low_8))
-            if self.COM.is_open:
+            if self.COM_plc.is_open:
                 myinput= bytes([0X01, 0X06, 0X00, 0X02, pos_high8, pos_low8,parity_high_8 ,parity_low_8])
                 #print(myinput)
-                self.COM.write(myinput)
+                self.COM_plc.write(myinput)
                 time.sleep(0.1)
             self.lock.release()
             self.state_read_flag.set()
         else:
             mBox.showinfo(title='串口未连接', message='串口未连接，无法移动平台')
+
+    def manual_forward(self):
+        if self.COM_plc != None:
+            self.state_read_flag.clear()
+            if self.COM_plc.is_open:
+                myinput = bytes([0X01, 0X05, 0X00, 0X04, 0XFF, 0X00, 0XCD, 0XFB])
+                self.COM_plc.write(myinput)
+                time.sleep(0.1)
+            self.state_read_flag.set()
+        else:
+            mBox.showinfo(title='PLC串口未连接', message='PLC串口未连接，无法移动')
+
+    def manual_backward(self):
+        if self.COM_plc != None:
+            self.state_read_flag.clear()
+            if self.COM_plc.is_open:
+                myinput = bytes([0X01, 0X05, 0X00, 0X05, 0XFF, 0X00, 0X9C, 0X3B])
+                self.COM_plc.write(myinput)
+                time.sleep(0.1)
+            self.state_read_flag.set()
+        else:
+            mBox.showinfo(title='PLC串口未连接', message='PLC串口未连接，无法移动')
+
+    def emergency_stop(self):
+        if self.COM_plc != None:
+            self.state_read_flag.clear()
+            if self.COM_plc.is_open:
+                myinput = bytes([0X01, 0X05, 0X00, 0X03, 0XFF, 0X00, 0X7C, 0X3A])
+                self.COM_plc.write(myinput)
+                time.sleep(0.1)
+            self.state_read_flag.set()
+        else:
+            mBox.showinfo(title='PLC串口未连接', message='PLC串口未连接，无法操作')
+
+    def receive_temp(self):  # 温度接收函数
+        if self.COM_temp != None:
+            while True:
+                if self.COM_temp.is_open:
+                    myinput = bytes([0XB1,0X01])#READ Tprocess temp.  #myinput = chr(0x01).encode('utf-8')
+                    self.COM_temp.write(myinput)
+                    time.sleep(0.05)
+            #读取返回
+                while self.COM_temp.inWaiting() > 0:
+                    myout = self.COM_temp.read(2) # 读取串口传过来的字节流，接收 2 个字节的数据
+                    # 对myout中的每个数据数据转成十六进制的形式
+                    datas = ''.join(map(lambda x: ('/x' if len(hex(x)) >= 2 else '/x0') + hex(x)[2:], myout))
+                    new_datas = datas.split("/x")  # 将字符串分割
+                    self.temperature = (int(new_datas[1], 16) * 256 + int(new_datas[2], 16)-1000)/10
+                    time.sleep(0.05)
+
     def setSnapPath(self):
         fDir = path.dirname(__file__)  ## 获取文件所在文件夹路径
         self.dPath = fd.askdirectory(parent=self.win, initialdir='D:/Defect Detection')  # 设置截图保存路径

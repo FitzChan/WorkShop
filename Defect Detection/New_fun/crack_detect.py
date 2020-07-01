@@ -153,20 +153,23 @@ class Detect:
         cv.waitKey(0)
         cv.destroyAllWindows()
 
-    def replaceZeroes(self,data):
+    def replaceZeroes(self,data):#用将图相中像素值为0的替换为非0的最小值
         min_nonzero = min(data[np.nonzero(data)])
         data[data == 0] = min_nonzero
         return data
 
     def SSR(self,src_img, size):#单尺度
-        L_blur = cv.GaussianBlur(src_img, (size, size), 0)
+        #L_blur = cv.GaussianBlur(src_img, (size, size), 0) #对src进行高斯模糊
+        L_blur = cv.GaussianBlur(src_img, (0, 0), size)  # 对src进行高斯模糊
         img = self.replaceZeroes(src_img)
         L_blur = self.replaceZeroes(L_blur)
 
-        dst_Img = cv.log(img / 255.0)
-        dst_Lblur = cv.log(L_blur / 255.0)
-        dst_IxL = cv.multiply(dst_Img, dst_Lblur)
-        log_R = cv.subtract(dst_Img, dst_IxL)
+        #dst_Img = cv.log(img / 255.0) #对数变换
+        dst_Img = cv.log(img )  # 对数变换 gai
+        #dst_Lblur = cv.log(L_blur / 255.0)
+        dst_Lblur = cv.log(L_blur)#gai
+        #dst_IxL = cv.multiply(dst_Img, dst_Lblur)
+        log_R = cv.subtract(dst_Img, dst_Lblur)
 
         dst_R = cv.normalize(log_R, None, 0, 255, cv.NORM_MINMAX)
         log_uint8 = cv.convertScaleAbs(dst_R)
@@ -176,11 +179,12 @@ class Detect:
         cv.waitKey(0)
         cv.destroyAllWindows()
 
-    def MSR(self,img, scales):
+    def MSR(self,img, scales): #scales = [15,101,301]
         weight = 1 / 3.0
         scales_size = len(scales)
         h, w = img.shape[:2]
         log_R = np.zeros((h, w), dtype=np.float32)
+        #doubleI = img.convertTo(cv.CV_32FC3, 1.0, 1.0)
 
         for i in range(scales_size):
             img = self.replaceZeroes(img)
@@ -212,9 +216,9 @@ class Detect:
 detect = Detect()
 #detect.cal_hist(img)# 计算原始图像hist
 #detect.equalize_hist(img)#直方图均衡化
-detect.Lap_enhance(img)
+#detect.Lap_enhance(img)
 scales = [15,101,301]
-#detect.MSR(img,scales)
+detect.MSR(img,scales)
 #detect.roi(img)#测试裂纹区域ROI
 #br, thr_g_r, k, the_cl)
 #detect.process(source,20,10,3,50)

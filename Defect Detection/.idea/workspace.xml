@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/New_fun/plt_tk.py" line="79" mnemonic="3" />
     <bookmark url="file://$PROJECT_DIR$/dcgui_v25_cv.py" line="782" mnemonic="8" />
   </component>
   <component name="ChangeListManager">
@@ -24,23 +23,50 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="widgets.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/widgets.py">
+      <file leaf-file-name="retinex.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/New_fun/retinex.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="30" column="31" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
-              <folding />
+            <state relative-caret-position="2910">
+              <caret line="100" column="11" selection-start-line="100" selection-start-column="11" selection-end-line="100" selection-end-column="11" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+                <element signature="e#6784#7673#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dcgui_v29_cv.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dcgui_v29_cv.py">
+      <file leaf-file-name="retinex_test1.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/New_fun/retinex_test1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="740" column="0" selection-start-line="740" selection-start-column="0" selection-end-line="740" selection-end-column="0" />
+            <state relative-caret-position="2400">
+              <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
               <folding>
-                <element signature="e#98#116#0" expanded="true" />
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="denoising.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/New_fun/denoising.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="enhencement.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/New_fun/enhencement.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="8730">
+              <caret line="295" column="41" selection-start-line="295" selection-start-column="41" selection-end-line="295" selection-end-column="41" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -49,92 +75,44 @@
       <file leaf-file-name="dcgui_v30_cv.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dcgui_v30_cv.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-5650">
-              <caret line="141" column="0" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
+            <state relative-caret-position="8880">
+              <caret line="312" column="16" selection-start-line="312" selection-start-column="8" selection-end-line="312" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="widgets_29.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/widgets_29.py">
+      <file leaf-file-name="dcgui_v31_cv.py" pinned="false" current-in-tab="true">
+        <entry file="file://D:/Defect Detection/dcgui_v31_cv.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-5458">
-              <caret line="57" column="9" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="9" />
+            <state relative-caret-position="279">
+              <caret line="619" column="52" selection-start-line="619" selection-start-column="52" selection-end-line="619" selection-end-column="52" />
               <folding>
-                <element signature="e#70#88#0" expanded="true" />
+                <element signature="e#92#110#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="crack_detect.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Camer_ Calibration.py" pinned="false" current-in-tab="false">
+        <entry file="file://D:/Defect Detection/Camer_ Calibration.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1320">
+              <caret line="46" column="10" selection-start-line="46" selection-start-column="10" selection-end-line="46" selection-end-column="10" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="crack_detect.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/New_fun/crack_detect.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="890">
-              <caret line="216" column="1" selection-start-line="216" selection-start-column="1" selection-end-line="216" selection-end-column="1" />
+            <state relative-caret-position="5880">
+              <caret line="198" column="45" selection-start-line="197" selection-start-column="8" selection-end-line="198" selection-end-column="45" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fuzzyset.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/New_fun/fuzzyset.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="410">
-              <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CH1_全连接层直接训练的神经网络.py" pinned="false" current-in-tab="false">
-        <entry file="file://D:/Study/Py_learning/Machine_Learning_Keras/CH1_全连接层直接训练的神经网络.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="103" column="17" selection-start-line="103" selection-start-column="17" selection-end-line="103" selection-end-column="17" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cv_4 ROI 泛洪填充.py" pinned="false" current-in-tab="false">
-        <entry file="file://D:/Study/Py_learning/Cvproject/cv_4 ROI 泛洪填充.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-              <folding>
-                <element signature="e#0#16#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CH25_ Hist1_Calc_Plot.py" pinned="false" current-in-tab="false">
-        <entry file="file://D:/Study/Py_learning/OpenCV Tutorial/CH25_ Hist1_Calc_Plot.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GaborBlur2.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/New_fun/GaborBlur2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="10" column="47" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="47" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -191,17 +169,22 @@
         <option value="$PROJECT_DIR$/dcgui_v29_cv.py" />
         <option value="$PROJECT_DIR$/widgets_29.py" />
         <option value="$PROJECT_DIR$/New_fun/timer.py" />
-        <option value="$PROJECT_DIR$/dcgui_v30_cv.py" />
         <option value="$PROJECT_DIR$/New_fun/fuzzyset.py" />
+        <option value="$PROJECT_DIR$/New_fun/retinex_test1.py" />
         <option value="$PROJECT_DIR$/New_fun/crack_detect.py" />
+        <option value="$PROJECT_DIR$/New_fun/retinex.py" />
+        <option value="$PROJECT_DIR$/New_fun/denoising.py" />
+        <option value="$PROJECT_DIR$/dcgui_v30_cv.py" />
+        <option value="$PROJECT_DIR$/New_fun/enhencement.py" />
+        <option value="D:/Defect Detection/Camer_ Calibration.py" />
+        <option value="D:/Defect Detection/dcgui_v31_cv.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="2" />
+    <option name="x" value="-10" />
     <option name="width" value="1925" />
-    <option name="height" value="1036" />
+    <option name="height" value="1030" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -262,17 +245,17 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.externalResources" />
-    <property name="last_opened_file_path" value="D:/Study/Py_learning" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="last_opened_file_path" value="D:/Study/Py_learning/Cvproject" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Python.dcgui_v30_cv">
-    <configuration default="false" name="crack_detect" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.dcgui_v31_cv">
+    <configuration default="false" name="enhencement" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -284,58 +267,24 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Defect Detection" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/New_fun/crack_detect.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/New_fun/enhencement.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="cv_2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="dcgui_v31_cv" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="D:/Study/Py_learning/Cvproject" />
+      <option name="WORKING_DIRECTORY" value="D:/Defect Detection" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Defect Detection" />
-      <option name="SCRIPT_NAME" value="D:/Study/Py_learning/Cvproject/cv_2.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="cv_1" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="D:/Study/Py_learning/Cvproject" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Defect Detection" />
-      <option name="SCRIPT_NAME" value="D:/Study/Py_learning/Cvproject/cv_1.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="fuzzyset" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/New_fun" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Defect Detection" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/New_fun/fuzzyset.py" />
+      <option name="SCRIPT_NAME" value="D:/Defect Detection/dcgui_v31_cv.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -353,6 +302,40 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Defect Detection" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dcgui_v30_cv.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="CH45_Camer_ Calibration" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="D:/Study/Py_learning/OpenCV Tutorial" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Defect Detection" />
+      <option name="SCRIPT_NAME" value="D:/Study/Py_learning/OpenCV Tutorial/CH45_Camer_ Calibration.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Camer_ Calibration" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="D:/Defect Detection" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Defect Detection" />
+      <option name="SCRIPT_NAME" value="D:/Defect Detection/Camer_ Calibration.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -492,19 +475,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.crack_detect" />
-      <item index="1" class="java.lang.String" itemvalue="Python.cv_2" />
-      <item index="2" class="java.lang.String" itemvalue="Python.cv_1" />
-      <item index="3" class="java.lang.String" itemvalue="Python.fuzzyset" />
-      <item index="4" class="java.lang.String" itemvalue="Python.dcgui_v30_cv" />
+      <item index="0" class="java.lang.String" itemvalue="Python.enhencement" />
+      <item index="1" class="java.lang.String" itemvalue="Python.dcgui_v31_cv" />
+      <item index="2" class="java.lang.String" itemvalue="Python.dcgui_v30_cv" />
+      <item index="3" class="java.lang.String" itemvalue="Python.CH45_Camer_ Calibration" />
+      <item index="4" class="java.lang.String" itemvalue="Python.Camer_ Calibration" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.dcgui_v30_cv" />
-        <item index="1" class="java.lang.String" itemvalue="Python.crack_detect" />
-        <item index="2" class="java.lang.String" itemvalue="Python.fuzzyset" />
-        <item index="3" class="java.lang.String" itemvalue="Python.cv_1" />
-        <item index="4" class="java.lang.String" itemvalue="Python.cv_2" />
+        <item index="0" class="java.lang.String" itemvalue="Python.dcgui_v31_cv" />
+        <item index="1" class="java.lang.String" itemvalue="Python.Camer_ Calibration" />
+        <item index="2" class="java.lang.String" itemvalue="Python.CH45_Camer_ Calibration" />
+        <item index="3" class="java.lang.String" itemvalue="Python.enhencement" />
+        <item index="4" class="java.lang.String" itemvalue="Python.dcgui_v30_cv" />
       </list>
     </recent_temporary>
   </component>
@@ -525,26 +508,26 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="2" width="1925" height="1036" extended-state="0" />
-    <editor active="true" />
+    <frame x="-10" y="0" width="1925" height="1030" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21660458" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21615838" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31596828" sideWeight="0.5375264" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32032147" sideWeight="0.46247357" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39933258" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31980908" sideWeight="0.46247357" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32992035" sideWeight="0.49791667" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39933258" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -591,81 +574,15 @@
           <properties exception="BaseException" />
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="5" />
+      <option name="time" value="6" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/New_fun/plt_pause.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/New_fun/123.py" />
-    <entry file="file://$PROJECT_DIR$/New_fun/animation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="5" column="5" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/New_fun/tk_animation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/New_fun/plt_tk.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1194">
-          <caret line="83" column="32" selection-start-line="83" selection-start-column="13" selection-end-line="83" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#11#0" expanded="false" />
-            <marker date="1575960067186" expanded="false" signature="1529:2574" ph="'''...'''" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/New_fun/offical_tk_plt.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/New_fun/threading.py" />
-    <entry file="file://$PROJECT_DIR$/New_fun/threading_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="26" column="32" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/New_fun/FOP1.py" />
-    <entry file="file://$PROJECT_DIR$/New_fun/tk_matplotlib_update.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="40" column="75" selection-start-line="40" selection-start-column="75" selection-end-line="40" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/New_fun/CH25_ Hist1_Calc_Plot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/New_fun/FOP.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/New_fun/tk_matplotlib_update.py" />
+    <entry file="file://$PROJECT_DIR$/New_fun/CH25_ Hist1_Calc_Plot.py" />
+    <entry file="file://$PROJECT_DIR$/New_fun/FOP.py" />
     <entry file="file://$USER_HOME$/Documents/WeChat Files/Cc__Yoorz/FileStorage/File/2019-12/004.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="990">
@@ -673,34 +590,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/New_fun/使用Tkinter绘制GUI并结合Matplotlib实现交互式绘图.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="43" column="25" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/New_fun/camer_matplo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="716">
-          <caret line="43" column="16" selection-start-line="40" selection-start-column="4" selection-end-line="43" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/New_fun/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/New_fun/widget.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-446">
-          <caret line="61" column="34" selection-start-line="61" selection-start-column="34" selection-end-line="61" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/New_fun/使用Tkinter绘制GUI并结合Matplotlib实现交互式绘图.py" />
+    <entry file="file://$PROJECT_DIR$/New_fun/camer_matplo.py" />
+    <entry file="file://$PROJECT_DIR$/New_fun/main.py" />
+    <entry file="file://$PROJECT_DIR$/New_fun/widget.py" />
     <entry file="file://$PROJECT_DIR$/New_fun/reference/plot.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -736,13 +629,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/New_fun/queue.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/New_fun/queue.py" />
     <entry file="file://$PROJECT_DIR$/dcgui_v23_cv.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="206">
@@ -805,20 +692,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/New_fun/csdn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="27" column="59" selection-start-line="27" selection-start-column="59" selection-end-line="27" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/New_fun/loadingbar.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="722">
-          <caret line="35" column="24" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/New_fun/csdn.py" />
+    <entry file="file://$PROJECT_DIR$/New_fun/loadingbar.py" />
     <entry file="file://D:/Study/keras_yolov3/keras-yolo3-master/yolo.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="118">
@@ -847,51 +722,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/New_fun/GaborBlur.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1740">
-          <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-          <folding>
-            <element signature="e#97#107#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/New_fun/GaborBlur2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="10" column="47" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/widgets.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="30" column="31" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/New_fun/timer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Study/Py_learning/OpenCV Tutorial/CH25_ Hist1_Calc_Plot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/New_fun/GaborBlur.py" />
+    <entry file="file://$PROJECT_DIR$/New_fun/GaborBlur2.py" />
+    <entry file="file://$PROJECT_DIR$/New_fun/timer.py" />
     <entry file="file://D:/Study/Py_learning/Cvproject/cv_2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-420">
@@ -906,30 +739,112 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/Study/Py_learning/Cvproject/cv_4 ROI 泛洪填充.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/New_fun/fuzzyset.py" />
     <entry file="file://D:/Study/Py_learning/Machine_Learning_Keras/CH1_全连接层直接训练的神经网络.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="103" column="17" selection-start-line="103" selection-start-column="17" selection-end-line="103" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Study/Py_learning/OpenCV Tutorial/CH25_ Hist1_Calc_Plot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Study/Py_learning/Cvproject/cv_4 ROI 泛洪填充.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/widgets_29.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="57" column="9" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/widgets.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="30" column="31" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/New_fun/retinex_test1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2400">
+          <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/New_fun/fuzzyset.py">
+    <entry file="file://$PROJECT_DIR$/New_fun/retinex.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
+        <state relative-caret-position="2910">
+          <caret line="100" column="11" selection-start-line="100" selection-start-column="11" selection-end-line="100" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#6784#7673#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/New_fun/denoising.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/New_fun/crack_detect.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5880">
+          <caret line="198" column="45" selection-start-line="197" selection-start-column="8" selection-end-line="198" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dcgui_v29_cv.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12900">
+          <caret line="446" column="42" selection-start-line="446" selection-start-column="35" selection-end-line="446" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Defect Detection/dcgui_v30_cv - 副本.py" />
+    <entry file="file://$PROJECT_DIR$/New_fun/enhencement.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8730">
+          <caret line="295" column="41" selection-start-line="295" selection-start-column="41" selection-end-line="295" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Study/Py_learning/OpenCV Tutorial/CH45_Camer_ Calibration.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Defect Detection/Camer_ Calibration.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1320">
+          <caret line="46" column="10" selection-start-line="46" selection-start-column="10" selection-end-line="46" selection-end-column="10" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
@@ -938,38 +853,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dcgui_v30_cv.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5650">
-          <caret line="141" column="0" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
+        <state relative-caret-position="8880">
+          <caret line="312" column="16" selection-start-line="312" selection-start-column="8" selection-end-line="312" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dcgui_v29_cv.py">
+    <entry file="file://D:/Defect Detection/dcgui_v31_cv.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="740" column="0" selection-start-line="740" selection-start-column="0" selection-end-line="740" selection-end-column="0" />
+        <state relative-caret-position="279">
+          <caret line="619" column="52" selection-start-line="619" selection-start-column="52" selection-end-line="619" selection-end-column="52" />
           <folding>
-            <element signature="e#98#116#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/widgets_29.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5458">
-          <caret line="57" column="9" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="9" />
-          <folding>
-            <element signature="e#70#88#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/New_fun/crack_detect.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="890">
-          <caret line="216" column="1" selection-start-line="216" selection-start-column="1" selection-end-line="216" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#92#110#0" expanded="true" />
           </folding>
         </state>
       </provider>
